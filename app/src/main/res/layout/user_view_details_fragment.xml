@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/row_item_margin_horizontal"
+    android:paddingTop="@dimen/row_item_margin_vertical"
+    tools:ignore="UnusedAttribute">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/basic_margin"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/user_name_size"
+        app:layout_constraintBottom_toBottomOf="@+id/user_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_picture"
+        app:layout_constraintTop_toTopOf="@+id/user_picture"
+        tools:text="Name Firstname" />
+
+    <TextView
+        android:id="@+id/user_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/basic_margin"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/user_email_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/user_picture"
+        app:layout_constraintTop_toBottomOf="@+id/user_picture"
+        tools:text="email" />
+
+    <TextView
+        android:id="@+id/user_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/user_email_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
+        tools:text="gender" />
+
+    <TextView
+        android:id="@+id/user_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/user_email_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_gender"
+        app:layout_constraintTop_toBottomOf="@+id/user_gender"
+        tools:text="phone" />
+
+    <TextView
+        android:id="@+id/user_nationality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/user_email_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_phone"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone"
+        tools:text="nationality" />
+
+    <TextView
+        android:id="@+id/user_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/row_item_margin_vertical"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/user_email_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_nationality"
+        app:layout_constraintTop_toBottomOf="@+id/user_nationality"
+        tools:text="location" />
+
+    <ImageView
+        android:id="@+id/user_picture"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_marginStart="@dimen/basic_margin"
+        android:layout_marginTop="@dimen/basic_margin"
+        android:contentDescription="@string/profile_description_accessibility"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

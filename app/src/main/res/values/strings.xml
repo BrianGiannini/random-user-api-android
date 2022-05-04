@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Random Users</string>
+    <string name="language">Language: %s</string>
+    <string name="profile_description_accessibility">profile image</string>
+    <string name="email_info">Email: %s</string>
+    <string name="gender_info">Gender: %s</string>
+    <string name="phone_info">Phone: %s</string>
+    <string name="nationality_info">Nationality: %s</string>
+    <string name="location_info">Address: %s</string>
+</resources>
