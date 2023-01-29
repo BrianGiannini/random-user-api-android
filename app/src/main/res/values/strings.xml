@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Random Users</string>
+    <string name="app_name">Random Users API project</string>
     <string name="language">Language: %s</string>
     <string name="profile_description_accessibility">profile image</string>
     <string name="email_info">Email: %s</string>
